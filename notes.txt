@@ -1,0 +1,6 @@
+Command to run generate protofile:
+protoc pb/vault.proto --go_out=plugins=grpc:. // Use this one
+
+http endpoints:
+curl -XPOST -d '{"password":"secret"}' http://localhost:8080/hash
+
